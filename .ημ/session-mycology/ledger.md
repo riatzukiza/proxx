@@ -47,3 +47,12 @@
   spore: none
   receipt-refs: 2026-08-30T09:13:15Z
   note: Exact parent refs and the one-line source delta made the merge mechanical; the focused integration file requires the compiled CLJS runtime, so the build-then-compiled-test path distinguished a harness precondition from product behavior.
+- ts: 2026-10-06T13:14:41.622685964Z
+  session: /tmp/foresight-proxx-issue31-xlinxkuv/worktree
+  task: Proxx31 concurrent environment fixture regression
+  p-efficiency: 0.85
+  p-friction: 0.3
+  p-skill-candidate: 0.5
+  spore: none
+  receipt-refs: open-hax/proxx#31
+  note: Per-test concurrency:false does not override a concurrent parent scheduling siblings; serialize the suite controlling shared environment and verify final state with a behavior probe. No global learning promotion or shared mutations.
