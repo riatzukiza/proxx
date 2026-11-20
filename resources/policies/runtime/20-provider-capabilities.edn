@@ -226,6 +226,6 @@
 
  {:contract/id :request-surface/embeddings
   :contract/kind :request-surface-default
-  :match/provider-pattern "^(llamacpp-embed|ollama)$"
+  :match/provider-pattern "^(llamacpp-embed|ollama|gte-yoga|gte-stealth)$"
   :match/request-kind :embeddings
   :prefer/strategies [:embeddings]}]

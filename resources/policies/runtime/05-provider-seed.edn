@@ -160,6 +160,18 @@
   :provider/base-url "http://llamacpp-embed:8081"
   :paths {:chat-completions "/v1/chat/completions"}}
 
+ {:contract/id :provider-route/gte-yoga
+  :contract/kind :provider-route
+  :provider/id "gte-yoga"
+  :provider/base-url "http://gte-yoga:8081"
+  :paths {:embeddings "/v1/embeddings"}}
+
+ {:contract/id :provider-route/gte-stealth
+  :contract/kind :provider-route
+  :provider/id "gte-stealth"
+  :provider/base-url "http://gte-stealth:8081"
+  :paths {:embeddings "/v1/embeddings"}}
+
  {:contract/id :provider-seed/musicgen
   :contract/kind :provider-seed
   :provider-id-env-names ["MUSICGEN_PROVIDER_ID"]

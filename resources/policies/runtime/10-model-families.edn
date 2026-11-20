@@ -60,6 +60,10 @@
   :contract/kind :model-family
   :match/model-pattern "(?i)^(?:xiaomi/|xiaomimimo/)?mimo-v2(?:-|\\.)"}
 
+ {:contract/id :model-family/gte-large-en-v1.5
+  :contract/kind :model-family
+  :match/model-pattern "(?i)^gte-large-en-v1[.]5$"}
+
  {:contract/id :model-family/qwen3-embedding
   :contract/kind :model-family
   :match/model-pattern "(?i)^qwen3-embedding(?::|-).*"}

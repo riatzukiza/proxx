@@ -577,6 +577,7 @@
             :route/mimo-v2-5-pro
             :route/mimo
             :route/mistral
+            :route/gte-large-en-v1.5
             :route/qwen3-embedding
             :route/kimi
             :route/blaze-text
@@ -602,7 +603,7 @@
     (is (= [:plus :pro :business :enterprise :team]
            (:require/plan-set gpt-paid)))
     (is (= 18 (count (:provider-capabilities compiled))))
-    (is (= 24 (count (:provider-routes compiled))))
+    (is (= 26 (count (:provider-routes compiled))))
     (is (= 7 (count (:request-surface-defaults compiled))))
     (is (= 4 (count (:tenant-authorization-clauses compiled))))
     (is (= :router/root (get-in compiled [:root-program :contract/id])))))

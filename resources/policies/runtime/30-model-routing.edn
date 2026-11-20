@@ -116,6 +116,13 @@
   :prefer/strategies [:chat-completions]
   :account/order :account-order/prefer-free}
 
+ {:contract/id :route/gte-large-en-v1.5
+  :contract/kind :routing-clause
+  :match/family :model-family/gte-large-en-v1.5
+  :prefer/providers ["gte-yoga" "gte-stealth"]
+  :prefer/providers-strict? true
+  :prefer/strategies [:embeddings]}
+
  {:contract/id :route/qwen3-embedding
   :contract/kind :routing-clause
   :match/family :model-family/qwen3-embedding
